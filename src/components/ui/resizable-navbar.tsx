@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
-
+import Image from "next/image";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -195,7 +195,7 @@ export const MobileNavMenu = ({
   children,
   className,
   isOpen,
-  onClose,
+
 }: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
@@ -239,9 +239,11 @@ export const NavbarLogo = () => {
         
      
       <h1 className="text-transparent bg-gradient-to-br from-[#7af0ff] to-[#5269ce] bg-clip-text  text-3xl">CodeAstera</h1>
-      <img
+      <Image
         src="/home/star.png"
         alt="logo"
+        width={40}
+        height={40}
         className=" w-10 absolute -right-9 -top-0.5"
       />
     </Link>
