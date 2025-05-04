@@ -7,6 +7,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
+    <>
+   <div className=" h-0.5 bg-gradient-to-r from-transparent to-white/30 w-[10%] inline-block "></div>
+   <div className=" h-0.5 bg-white/30 w-[80%]  inline-block"></div>
+   <div className=" h-0.5 bg-gradient-to-r to-transparent from-white/30 w-[10%]  inline-block"></div>
     <footer className=" pt-12 pb-8 overflow-clip">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -175,7 +179,7 @@ export default function Footer() {
 
         {/* <div className=" h-12 w-full bg-gradient-to-t  from-blue-300 to-90%   to-transparent z-0"></div> */}
         <div
-      className="absolute -top-36 w-full h-36 rotate-180"
+      className="absolute -top-48 w-full h-48 rotate-180"
       style={{
         background: `linear-gradient(to right, rgba(173, 216, 250, 0.5), rgba(135, 206, 255, 0.5), rgba(100, 178, 255, 0.5), rgba(65, 155, 255, 0.5), rgba(30, 144, 255, 0.5))`,
         WebkitMaskImage: `radial-gradient(ellipse at top, black, transparent 60%)`,
@@ -192,7 +196,7 @@ export default function Footer() {
     
       </div>
     </footer>
-
+    </>
     
   );
 }

@@ -16,42 +16,57 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		  fontFamily: {
-			robotoSlab: [
-				'var(--roboto-slab)'
-			],
-			roboto: [
-				'var(--roboto)'
-			],
-			afacad: [
-				'var(--afacad)'
-			],
-			openSans: [
-				'var(--open-sans)'
-			],
-			ysabeau: [
-				'var(--ysabeau)'
-			],
-			ubuntu: [
-				'var(--ubuntu)'
-			],
-			inter: [
-				'var(--font-inter)'
-			],
-			playfairDisplay: [
-				'var(--font-playfair-display)'
-			],
-			yellowTail: [
-				'var(--font-yellowtail)'
-			],
-			
-			geistSans : [
-				'var(--font-geist-sans)'
-			]
-			
-		},
-
+  		fontFamily: {
+  			
+  			geistSans: [
+  				'var(--font-geist-sans)'
+  			]
+  		},
+		 
+		  maxWidth: {
+			container: "80rem",
+		  },
+		  boxShadow: {
+			glow: "0 -16px 128px 0 hsla(var(--brand-foreground)) inset, 0 -16px 32px 0 hsla(var(--brand)) inset",
+		  },
+		  keyframes: {
+			"fade-in-up": {
+			  "0%": { 
+				opacity: "0",
+				transform: "translateY(10px)"
+			  },
+			  "100%": {
+				opacity: "1",
+				transform: "translateY(0)"
+			  }
+			},
+			"fade-in": {
+			  "0%": {
+				opacity: "0"
+			  },
+			  "100%": {
+				opacity: "1"
+			  }
+			},
+			"scale-in": {
+			  "0%": {
+				opacity: "0",
+				transform: "scale(0.95)"
+			  },
+			  "100%": {
+				opacity: "1",
+				transform: "scale(1)"
+			  }
+			}
+		  },
+		  animation: {
+			"fade-in-up": "fade-in-up 0.5s ease-out forwards",
+			"fade-in": "fade-in 0.5s ease-out forwards",
+			"scale-in": "scale-in 0.5s ease-out forwards"
+		  },
   		colors: {
+			brand: "hsl(var(--brand))",
+			"brand-foreground": "hsl(var(--brand-foreground))",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -92,7 +107,8 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+
   	}
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports

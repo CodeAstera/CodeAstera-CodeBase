@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/main/Footer";
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from "next-themes";
 import { NavbarDemo } from "@/components/main/NavbarDemo";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "CodeAstera | Web Development Services ",
@@ -23,11 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} bg-[rgb(3,0,13)] font-geistSans`}>
-    
-      <NavbarDemo/>
-     
-       <ThemeProvider  attribute="class" defaultTheme="dark" >{children}</ThemeProvider>
-        <Footer/>
+        
+            <NavbarDemo />
+
+            <ThemeProvider attribute="class" defaultTheme="dark">
+              {children}
+            </ThemeProvider>
+            <Footer />
+       
       </body>
     </html>
   );
