@@ -3,12 +3,15 @@
 // import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero() {
+export default function HeroSection1() {
   //   const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="">
-      <section className="relative pt-12 overflow-hidden bg-black sm:pt-16">
+      
+ {/* <div className="absolute z-[0] inset-0   bg-blue-500/10 bg-[radial-gradient(ellipse_30%_56%_at_50%_-20%,rgba(100,149,237,0.3),rgba(255,255,255,0))]" /> */}
+      <section className="relative pt-12 overflow-hidden bg-transparent sm:pt-16">
+     
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-5xl mx-auto text-center">
             <p className="text-sm font-normal tracking-widest uppercase">

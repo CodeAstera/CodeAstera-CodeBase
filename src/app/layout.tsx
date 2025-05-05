@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} bg-[rgb(3,0,13)] font-geistSans`}>
+      <body className={`${geistSans.variable} bg-[hsla(222.2,_84%,_4.9%,_1)] font-geistSans`}>
         
             <NavbarDemo />
 

@@ -3,6 +3,7 @@ import "./globals.css";
 // import HeroSec1 from "@/components/home/HeroSec1";
 import { CTASection } from "@/components/blocks/cta-with-rectangle";
 import HeroSection1 from "@/components/home/HeroSection1";
+import { Spotlight } from "@/components/ui/spotlight";
 // import { CTASection } from "@/components/blocks/cta-with-rectangle";
 export default function Home() {
   return (
@@ -10,6 +11,10 @@ export default function Home() {
       <div className="max-w-6xl md:max-w-7xl mx-auto px-5 md:px-8">
         <div className="flex flex-col gap-36">
           <HeroSection1 />
+          <Spotlight
+            className="-top-40 left-0 md:-top-20 md:left-60"
+            fill="white"
+          />
           <CTASection
             badge={{
               text: "Get started",
