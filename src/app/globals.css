@@ -6,7 +6,9 @@
   background-color: rgba(48, 213, 200, 0.3);
   color: rgba(48, 213, 200, 1);
 }
-
+text{
+  fill: rgba(255,255,255) !important;
+}
 @layer base {
   :root {
     --color-cyan-500: #06b6d4;
@@ -135,4 +137,17 @@
   }
   
 
+}
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0);
+  }
+  
+  25% {
+    box-shadow: 0 0 30px 12px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.animate-glow {
+  animation: glow 4s cubic-bezier(0.4, 0, 0.2, 1) ;
 }

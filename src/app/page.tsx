@@ -4,6 +4,7 @@ import "./globals.css";
 import { CTASection } from "@/components/blocks/cta-with-rectangle";
 import HeroSection1 from "@/components/home/HeroSection1";
 import { Spotlight } from "@/components/ui/spotlight";
+import Pricing from "@/components/home/Pricing";
 // import { CTASection } from "@/components/blocks/cta-with-rectangle";
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
             className="-top-40 left-0 md:-top-20 md:left-60"
             fill="white"
           />
+          <Pricing/>
           <CTASection
             badge={{
               text: "Get started",

@@ -30,6 +30,10 @@ module.exports = {
 			glow: "0 -16px 128px 0 hsla(var(--brand-foreground)) inset, 0 -16px 32px 0 hsla(var(--brand)) inset",
 		  },
 		  keyframes: {
+			shine: {
+				'0%': { 'background-position': '100%' },
+				'100%': { 'background-position': '-100%' },
+			  },
 			"fade-in-up": {
 			  "0%": { 
 				opacity: "0",
@@ -74,7 +78,8 @@ module.exports = {
 			spotlight: "spotlight 2s ease .75s 1 forwards",
 			"fade-in-up": "fade-in-up 0.5s ease-out forwards",
 			"fade-in": "fade-in 0.5s ease-out forwards",
-			"scale-in": "scale-in 0.5s ease-out forwards"
+			"scale-in": "scale-in 0.5s ease-out forwards",
+			shine: 'shine 5s linear infinite',
 		  },
   		colors: {
 			brand: "hsl(var(--brand))",
