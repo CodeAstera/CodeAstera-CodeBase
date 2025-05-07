@@ -1,17 +1,11 @@
-// "use client";
-// import { useState } from "react";
-// import Image from "next/image";
 import Link from "next/link";
+import CodeasteraDashboard from "./Dashboard";
 
 export default function HeroSection1() {
-  //   const [expanded, setExpanded] = useState(false);
-
   return (
     <div className="">
-      
- {/* <div className="absolute z-[0] inset-0   bg-blue-500/10 bg-[radial-gradient(ellipse_30%_56%_at_50%_-20%,rgba(100,149,237,0.3),rgba(255,255,255,0))]" /> */}
-      <section className="relative pt-12 overflow-hidden bg-transparent sm:pt-16">
-     
+      {/* <div className="absolute z-[0] inset-0   bg-blue-500/10 bg-[radial-gradient(ellipse_30%_56%_at_50%_-20%,rgba(100,149,237,0.3),rgba(255,255,255,0))]" /> */}
+      <section className="relative pt-12 overflow-hidden bg-transparent ">
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-5xl mx-auto text-center">
             <p className="text-sm font-normal tracking-widest uppercase">
@@ -30,8 +24,18 @@ export default function HeroSection1() {
             <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-white from-40% to-white/55  text-4xl font-medium  sm:text-5xl lg:text-6xl xl:text-7xl">
               for Brands ready to Orbit
             </h1>
-
+            <p className="text-md mx-auto  mt-10 text-[rgb(154,154,164)] font-normal text-balance sm:text-xl">
+            We build high-performance web solutions that elevate your brand into the digital stratosphere — fast, scalable, and future-ready.
+            </p>
             <div className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
+             
+
+              <Link
+                href="#"
+                className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-black border border-gray-600 rounded-full sm:w-auto hover:border-white"
+              >
+                Explore
+              </Link>
               <div className="relative inline-flex items-center justify-center w-full sm:w-auto group">
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
                 <Link
@@ -41,18 +45,11 @@ export default function HeroSection1() {
                   Build Your Success Story
                 </Link>
               </div>
-
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-black border border-gray-600 rounded-full sm:w-auto hover:border-white"
-              >
-                Explore
-              </Link>
             </div>
           </div>
 
-          <div className="relative mt-12 -mb-4 sm:-mb-10 lg:-mb-12 sm:mt-16 lg:mt-24">
-            <div className="absolute top-0 transform -translate-x-1/2 left-1/2">
+          <div className="relative mt-12 -mb-4 sm:-mb-10 lg:-mb-12 sm:mt-16 lg:mt-52">
+            <div className="absolute -top-12 transform -translate-x-1/2 left-1/2">
               <svg
                 className="blur-3xl filter"
                 style={{ filter: "blur(64px)" }}
@@ -87,26 +84,8 @@ export default function HeroSection1() {
                 </defs>
               </svg>
             </div>
-
-            <div className="absolute inset-0">
-              {/* <Image
-                className="object-cover w-full h-full opacity-50"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png"
-                alt="Noise texture"
-                fill
-              /> */}
-            </div>
-
-            <div className="relative w-full max-w-5xl mx-auto">
-              {/* <Image
-                className="w-full"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/4/dashboard-mockup.png"
-                alt="Dashboard mockup"
-                width={1024}
-                height={576}
-              /> */}
-            </div>
           </div>
+          <CodeasteraDashboard/>
         </div>
       </section>
     </div>
